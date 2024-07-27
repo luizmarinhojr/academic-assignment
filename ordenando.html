@@ -3,32 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ordenando Valores</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 <body>
-    
-    <!-- ADIÇÃO ITENS DO VETOR -->
-    <input type="number" id="valor">
-    <input type="button" value="Adicionar" onclick="add()"">
+    <div class="container-fluid">
+        <h1>Ordenando Valores</h1>
+        
+        <label for="valor">Valor</label>
+        <input class="form-control" type="number" id="valor" value="1">
+        <input type="button" class="btn btn-primary mt-2" value="Adicionar" onclick="add()"">
+       
+        <hr>
 
-    <!-- ORDENAÇÃO -->
-    <select id="algoritmo" name="algoritmo">
-        <option value="blubble_sort">Blubble Sort</option>
-        <option value="selection_sort">Selection Sort</option>
-        <option value="quick_sort">Quick Sort</option>
-    </select>
-    <input type="button" value="Ordenar" onclick="ordenar()">
-    <input type="button" value="Misturar" onclick="misturar()">
+        <select id="algoritmo" class="form-control" name="algoritmo">
+            <option value="blubble_sort">Blubble Sort</option>
+            <option value="selection_sort">Selection Sort</option>
+            <option value="quick_sort">Quick Sort</option>
+        </select>
+        <div class="buttons mt-2">
+            <input type="button" class="btn btn-primary mr-2" value="Ordenar" onclick="ordenar()">
+            <input type="button" class="btn btn-primary" value="Misturar" onclick="misturar()">
+        </div>
 
-    <ul id="valores"></ul>
+        <hr>
+
+        <ul id="valores"></ul>
+    </div>
     <script type="text/javascript">
         function add() {
-            let valor = parseInt(document.getElementById("valor").value);
+            let valor = document.getElementById("valor");
             let nodeValues = document.getElementById("valores");
             let node = document.createElement("li");
-            let textNode = document.createTextNode(valor);
+            let textNode = document.createTextNode(eval(valor.value));
             node.appendChild(textNode);
             nodeValues.appendChild(node);
+            valor.value = 1;
         }
 
         function ordenar() {
