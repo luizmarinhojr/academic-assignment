@@ -67,7 +67,7 @@
         function misturar() {
             let valores = document.getElementById("valores");
             let vetor = Array.from(valores.children).map(valor => eval(valor.innerHTML));
-            let result = shuffle(vetor, 2);
+            let result = shuffle(vetor, 4);
             valores.innerHTML = Array.from(result).map(item => `<li>${item}</li>`).reduce((acc, item) => acc + item, '');
         }
     </script>
