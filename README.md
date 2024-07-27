@@ -28,3 +28,9 @@ Você pode acessar o site diretamente através dos links abaixo:
 O website está hospedado de forma gratuita na Vercel e pode ser acessado através dos links listados na seção [Como acessar](#como_acessar).
 
 ## Demonstração
+
+![Screenshot_20240727_185543](https://github.com/user-attachments/assets/ff73ffd3-e7cb-46f1-a4c1-31cefe6c84c4)
+
+![Screenshot_20240727_185315](https://github.com/user-attachments/assets/f5573ca6-22d1-4bf4-af6f-a63e3201f5be)
+
+![Screenshot_20240727_185343](https://github.com/user-attachments/assets/a3186934-8d13-44ca-8c39-c69a337bed31)
